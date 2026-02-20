@@ -1,0 +1,8 @@
+# ansible/inventory.yml
+all:
+  children:
+    webservers: # группа веб-серверов
+      hosts:
+        web1: # имя сервера выбрано произвольно
+          # Поменяйте на ip вашего сервера
+          ansible_host: 167.71.78.245
